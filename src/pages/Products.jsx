@@ -51,7 +51,6 @@ const Products = () => {
 	};
 
 	const renderContent = () => {
-		console.log(Array.isArray(products));
 		if (Array.isArray(products)) {
 			return (
 				<table>

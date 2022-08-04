@@ -1,5 +1,5 @@
 import "./App.css";
-import Products from "./pages/Products";
+import Store from "./pages/Store";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -7,7 +7,8 @@ function App() {
 		<div className="body">
 			<BrowserRouter>
 				<Routes>
-					<Route path="/" element={<Products />} />
+					<Route path="/" element={<Store />} />
+					{/* <Route path="/" element={<Products />} /> */}
 				</Routes>
 			</BrowserRouter>
 		</div>
