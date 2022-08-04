@@ -1,0 +1,201 @@
+.body {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-rows: 80px 1fr;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	padding: 10px 20px;
+}
+
+li {
+	list-style: none;
+}
+
+.header {
+	grid-column: 1/-1;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px;
+}
+
+.header-title {
+	color: white;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.header-btns {
+	display: flex;
+}
+
+.header-btns a:link,
+.header-btns a:visited {
+	text-decoration: none;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	background-color: black;
+	color: white;
+	fill: white;
+	font-size: 18px;
+}
+
+.btn--header.btn:hover {
+	background-color: white;
+	color: black;
+	fill: black;
+}
+
+.btn--delete {
+	background-color: transparent;
+	fill: red;
+}
+
+.btn--submit {
+	background-color: #2470dc;
+	color: white;
+	transition: all 2s;
+	height: 50px;
+}
+
+.btn--submit:hover {
+	background-color: #669be7;
+}
+
+.icon svg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 25px;
+	height: 22px;
+}
+
+.menu {
+	background-color: #f7f7f7;
+	padding: 30px;
+}
+
+.menu-items {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.menu-item {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.menu-item--active:link .icon,
+.menu-item--active:visited .icon {
+	fill: #2470dc;
+}
+
+.menu-item--active:link p,
+.menu-item--active:visited p {
+	color: #2470dc;
+}
+
+.menu-item:link,
+.menu-item:visited {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+
+.main {
+	padding: 0 20px;
+	height: 100%;
+	overflow: scroll;
+}
+
+table {
+	width: 100%;
+	border-collapse: separate;
+	font-size: 18px;
+	border-spacing: 0;
+	empty-cells: show;
+}
+
+th,
+td {
+	padding: 8px 12px;
+	height: 50px;
+}
+
+th {
+	font-weight: 500;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	border-bottom: 2px solid black;
+	background-color: white;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #f7f7f7;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #fff;
+}
+
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.form {
+	width: 100%;
+	width: 75%;
+	font-size: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.form label {
+	color: #2470dc;
+}
+
+.form-control {
+	height: 50px;
+	outline: none;
+	padding: 8px 12px;
+	font-size: 20px;
+}
+
+.form-control:focus {
+	border: 2px solid #2470dc;
+}
+
+.form-item {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.invalid-feedback {
+	color: red;
+	font-size: 18px;
+	display: none;
+}
